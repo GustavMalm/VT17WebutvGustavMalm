@@ -6,7 +6,7 @@
 	display: inline-block;
 }
 body {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/b3/e8/40/b3e840bcd93913dcb64864b3b901ee8a.jpg);
+	background-image: url(http://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/18.jpg);
 	background-size: 256px;
 }
 header, footer {
@@ -15,57 +15,40 @@ header, footer {
 	text-align: center;
 }
 header {
-	background-image: url(http://www.wpwoodworks.com/wp-content/uploads/2015/11/883703.jpg);
-	background-size: 512px;
+	background-color: lightcoral;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border: 3px solid black;
 	box-shadow: 5px 5px 10px;
 }
-header > section {
-	background-image: url(http://www.10ravens.com/files/product/7/10/15456/preview.jpg);
-	background-size: 70px;
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px;
-}
-header h1, p {
+header > h1, p {
 	font-family: sans-serif;
 }
-header h1 {
-	padding-top: 10px;
-}
-header p {
-	padding-bottom: 10px;
-}
 aside {
-	background-image: url(http://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/21.jpg);
-	background-size: 256px;
+	background-color: lightblue;
 	float: left;
+	max-width: 300px;
 	margin: 0;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border: 3px solid black;
 	box-shadow: 5px 5px 10px;
 }
-aside nav > h2 {
-	margin-top: 10px;
-	margin-left: 15%;
-	margin-right: 20%;
+aside nav > h3 {
+	margin-top: 85%;
+	margin-left: 10%;
+	margin-right: 15%;
 }
 aside ul > li {
 	margin-top: 10px;
-	margin-right: 40px;
-	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-bottom: 15px;
 	margin-left: 40px;
 	border-radius: 5px;
-	background-image: url(http://userscontent2.emaze.com/images/4fea7ba7-a63e-4497-a74e-ec0f8e6e3ed9/9894e5f3-67ea-4b9a-ab48-de813dca3fbf.jpg);
-	background-size: 80px;
-	padding-top: 5px;
-	padding-right: 10px;
-	padding-bottom: 5px;
-	padding-left: 10px;
+	background-color: whitesmoke;
+	padding: 5px;
 	text-align: center;
 	border: 1px solid black;
 }
@@ -77,13 +60,11 @@ aside img {
 	float: right;
 }
 main {
-	background-color: whitesmoke;
+	background-color: lightgoldenrodyellow;
 	margin-top: 10px;
-	margin-right: 15px;
+	margin-left: 200px;
 	margin-bottom: 10px;
-	margin-left: 185px;
 	padding: 1em;
-	height: 365px;
 	overflow: auto;
 	border-radius: 5px;
 	border: 3px solid black;
@@ -95,8 +76,7 @@ main > h2, p {
 	margin-right: 15px;
 }
 footer {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/63/bc/cb/63bccb6228be26e3c02bf5614e97bfb4.jpg);
-	background-size: 64px;
+	background-color: springgreen;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border: 3px solid black;
@@ -126,8 +106,7 @@ ul > li:hover {
 	border: 2px solid black;
 }
 small > a {
-	background-image: url(http://userscontent2.emaze.com/images/4fea7ba7-a63e-4497-a74e-ec0f8e6e3ed9/9894e5f3-67ea-4b9a-ab48-de813dca3fbf.jpg);
-	background-size: 160px;
+	background-color: whitesmoke;
 	padding: 5px;
 	border-radius: 5px;
 	border: 1px solid black;
