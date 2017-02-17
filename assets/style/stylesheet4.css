@@ -1,0 +1,187 @@
+@keyframes blink {
+	0% {
+		background-color: firebrick;
+	}
+	25% {
+		background-color: deeppink;
+	}
+	50% {
+		background-color: limegreen;
+	}
+	75% {
+		background-color: darkblue;
+		color: whitesmoke;
+	}
+	100% {
+		background-color: yellow;
+	}
+}
+@keyframes addborder {
+	from {
+		border: 0px;
+	}
+	to {
+		border: 3px solid black;
+	}
+}
+@keyframes move {
+	0%, 100% {
+		top: 2px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+	}
+	25% {
+		top: 0px;
+		right: 2px;
+		bottom: 0px;
+		left: 0px;
+	}
+	50% {
+		top: 0px;
+		right: 0px;
+		bottom: 2px;
+		left: 0px;
+	}
+	75% {
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 2px;
+	}
+}
+@keyframes changefont {
+	0%, 100% {
+		font-size: 18px;
+	}
+	50% {
+		font-size: 300px;
+	}
+}
+@keyframes changecolor {
+	from {
+		background-color: white;
+	}
+	to{
+		background-color: darkgray;
+	}
+}
+@keyframes right-left {
+	from {
+		right: -15%;
+	}
+	to {
+		right: 100%;
+		margin-left: 10%;
+	}
+}
+@keyframes rotate {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(360deg);
+		transform: rotatey(360deg);
+	}
+}
+@keyframes rotate-z {
+	from {
+		transform: rotatez(0deg);
+	}
+	to {
+		transform: rotatez(360deg);
+	}
+}
+@keyframes resize {
+	0%, 100% {
+		
+	}
+	50% {
+		width: 512px;
+	}
+}
+.container1 {
+	position: fixed;
+	max-width: 500px;
+	max-height: 25px:
+}
+.container2 {
+	position: fixed;
+	overflow: visible;
+	min-width: 300px;
+	margin-top: 50px;
+}
+.container3 {
+	position: fixed;
+	padding: 10px;
+	margin: 150px;
+}
+.container4 {
+	position: fixed;
+	margin-top: 300px;
+	margin-left: 40%;
+	width: 10%;
+	overflow: visible;
+}
+.fakead {
+	position: relative;
+	width: 350px;
+	padding: 10px;
+	animation: blink 0.5s infinite, move 0.5s infinite, addborder 0.5s infinite;
+}
+.fakead:hover {
+	animation-play-state: paused;
+}
+.moveleft {
+	position: fixed;
+	min-width: 300px;
+	border: 3px solid black;
+	padding: 10px;
+	overflow: visible;
+	animation: right-left 10s infinite, changecolor 10s infinite;
+	animation-delay: 0s;
+	animation-timing-function: ease-out;
+}
+.rotate-me {
+	position: fixed;
+	border: 3px solid black;
+	padding: 10px;
+	overflow: visible;
+	animation: rotate 2s infinite;
+}
+.rotate-me-z {
+	position: fixed;
+	border: 3px solid black;
+	padding: 10px;
+	overflow: visible;
+	animation: rotate-z 1s infinite;
+}
+.fonta {
+	position: fixed;
+	border: 3px solid black;
+	padding: 10px;
+	overflow: visible;
+	animation: changefont;
+	animation-iteration-count: 1;
+	animation-delay: 5s;
+	animation-duration: 25s;
+	animation-fill-mode: both;
+}
+.reverse-me {
+	position: fixed;
+	min-width: 300px;
+	border: 3px solid black;
+	padding: 10px;
+	overflow: visible;
+	animation: right-left 10s infinite, changecolor 10s infinite;
+	animation-direction: reverse;
+	animation-timing-function: ease-out;
+}
+.animage {
+	margin-top: 500px;
+}
+.animage:hover {
+	animation: resize 10s;
+	animation-timing-function: ease-out;
+	animation-play-state: running;
+}
