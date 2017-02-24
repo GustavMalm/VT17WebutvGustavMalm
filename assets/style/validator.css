@@ -1,0 +1,12 @@
+*{
+	font-size: 1.1em;
+}
+.validation__input{
+	margin: 20px;
+}
+button {
+	font-size: 14px;
+	margin-right: 10px;
+	width: 64px;
+	height: 32px;
+}
