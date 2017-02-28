@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#rating {
+	height: 100px;
+	top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+#loading-image {
+	width: 50px;
+	visibility: hidden;
+}
+.rating-votes {
+	direction: rtl;
+}
+.rating-votes > span {
+	cursor: pointer;
+	font-size: 50px;
+	color: orangered;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	display: inline-block;
+	position: relative;
+	width: 1.1em;
+}
+.rating-votes > span:hover,
+.rating-votes > span:hover ~ span {
+	color: transparent;
+}
+.rating-votes > span:hover:before,
+.rating-votes > span:hover ~ span:before {
+	content: "\2605";
+	position: absolute;
+	left: 4px;
+	color: darkred;
+}
+.ingredient-quantity {
+	font-weight: bold;
+}
+body {
+	background-image: url(../resources/green_cup.png);
+	background-repeat: repeat;
+}
+body > header {
+	padding: 40px;
+}
+header figure {
+	margin: 0px auto;
+	display: block;
+}
+header > img {
+	max-width: 300px;
+	border-radius: 15px;
+	margin: 0px auto;
+	margin-top: 10px;
+	display: block;
+}
+header h1{
+	text-align: center;
+}
+aside {
+	float: left;
+	margin: 10px;
+	padding: 20px;
+}
+aside select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+aside ul {
+	margin-left: 35px;
+}
+main {
+	position: absolute;
+	left: 265px;
+	right: 265px;
+	margin: 10px;
+	padding: 20px;
+	min-width: 500px;
+}
+main ol, li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+main li {
+	margin-left: 46px;
+}
+main p {
+	margin-top: 10px;
+}
+footer {
+	margin-top: 150px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	display: inline-block;
+}
+article img {
+	max-width: 25%;
+	border-radius: 15px;
+	margin: 0px auto;
+	display: block;
+}
+a img {
+	position: relative;
+	top: 20px;
+	left: 40px;
+	max-width: 64px;
+	border: 1px solid transparent;
+}
+a img:hover {
+	border: 1px solid black;
+}
+figure {
+	padding: 5px;
+	max-width: 500px;
+}
+figure img {
+	max-width: 100%;
+	border-radius: 15px;
+}
+section > h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+div > figure {
+	margin: 0px auto;
+	display: block;
+}
+h1 {
+	font-size: 50px;
+}
+h4 {
+	font-family: monospace;
+	font-style: italic;
+}
+@media all and (max-width: 500px) {
+	aside {
+		float: none;
+	}
+	main {
+		left: 0px;
+		right: 265px;
+		margin: 10px;
+		padding: 20px;
+		min-width: 500px;
+	}
+	footer {
+		margin-top: 150%;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+}

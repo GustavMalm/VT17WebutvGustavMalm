@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Uppgift 7 - Recept</title>
+		<link rel="stylesheet" type="text/css" href="../style/recipe.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="uppgift7.html">
+					<img src="https://img.clipartfest.com/d9d995aae026892df50c4120521b82c9_house-clipart-png-home-clipart-png_512-512.png" alt="HOME">
+				</a>
+			</nav>
+			<h1>Recept på Snoddas</h1>
+		</header>
+		<aside>
+			<section id="ingredients">
+				<h2>Ingredienser</h2>
+				<select id="portions" onchange="adjustPortions()">
+					<option value="1">Portioner: 15 Bitar</option>
+					<option value="2">Portioner: 20 - 25 Bitar</option>
+					<option value="3">Portioner: 30 Bitar</option>
+					<option value="4">Portioner: 35 - 40 Bitar</option>
+					<option value="5">Portioner: 45 Bitar</option>
+					<option value="6">Portioner: 60 Bitar</option>
+				</select>
+				<section class="ingredients-1">
+					<h2>Kaka</h2>
+					<ul>
+						<li><span class="ingredient-quantity">4</span> dl vetemjöl</li>
+						<li><span class="ingredient-quantity">2</span> tsk bakpulver</li>
+						<li><span class="ingredient-quantity">4</span> msk kakao</li>
+						<li><span class="ingredient-quantity">2</span> dl starkt kaffe eller vatten</li>
+						<li><span class="ingredient-quantity">200</span> g smör eller margarin</li>
+						<li><span class="ingredient-quantity">5</span> ägg</li>
+						<li><span class="ingredient-quantity">4</span> dl strösocker</li>
+						<li><span class="ingredient-quantity">1</span> msk vaniljsocker</li>
+					</ul>
+				</section>
+				<section class="ingredients-2">
+					<h2>Glasyr</h2>
+					<ul>
+						<li><span class="ingredient-quantity">3.5</span> dl florsocker</li>
+						<li><span class="ingredient-quantity">2</span> msk kakao</li>
+						<li><span class="ingredient-quantity">60</span> g smör eller margarin</li>
+						<li><span class="ingredient-quantity">2</span> msk kallt starkt kaffe</li>
+					</ul>
+				</section>
+				<section class="ingredients-3">
+					<h2>Garnering</h2>
+					<ul>
+						<li>ca <span class="ingredient-quantity">2</span> dl riven kokos</li>
+					</ul>
+				</section>
+			</section>
+		</aside>
+		<main>
+			<article class="main-article">
+				<img src="https://ensmaksakdotcom.files.wordpress.com/2014/04/dsc_2242.jpg" alt="Bilden kan inte visas" title="Snoddas">
+				<h2>Så här gör du</h2>
+				<ol>
+					<li>Sätt ugnen på 200˚C.</li>
+					<li><strong>Kaka</strong>: Blanda mjöl, bakpulver och kakao. Koka upp vätskan i en kastrull. Skär matfettet i mindre bitar lägg det i kastrullen för att smälta.</li>
+					<li>Vispa ägg, socker och vaniljsocker pösigt. Sikta ner mjölblandningen i äggsmeten och rör om. Vänd ner matfettsblandningen och blanda om väl.</li>
+					<li>Häll smeten i långpannan. Grädda mitt i ugnen ca 15 minuter. Låt kakan kallna i långpannan.</li>
+					<li><strong>Glasyr</strong>: Sikta florsocker och kakao i en bunke. Smält matfettet och blanda ner kaffet. Rör ner det i sockerblandningen och rör glasyren slät. Bred glasyren på kakan.</li>
+					<li><strong>Garnering</strong>: Strö på kokos. Skär kakan i bitar.</li>
+				</ol>
+				<section id="rating">
+					<h3>Rösta på detta recept:</h3>
+					<section class="rating-information"><h4>Snittbetyg: <span id="rating-value">0</span> / <span>Antal röster: </span><span id="rating-votes">0 </span></h4></section>
+					<div class="rating-votes">
+						<span class="rating-star">☆</span>
+						<span class="rating-star">☆</span>
+						<span class="rating-star">☆</span>
+						<span class="rating-star">☆</span>
+						<span class="rating-star">☆</span>
+						<figure class="loading">
+							<img src="../resources/loading.gif" alt="Laddar Snittbetyg/Antal Röster..." id="loading-image" style="visibility: visible;">
+						</figure>
+					</div>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<nav><small>Källor: <a href="http://www.ica.se/recept/chokladrutor-med-glasyr-och-kokos-5344/">Recept</a> | <a href="https://www.toptal.com/designers/subtlepatterns/">Bakgrundsbild</a> | <a href="http://3.bp.blogspot.com/-uSZUkY1sE24/VVSewNyTRTI/AAAAAAAADBg/kncnZoUZ8eo/s1600/2015-05-06%2B12_Fotor.jpg">Bild 1</a> | <a href="https://ensmaksakdotcom.files.wordpress.com/2014/04/dsc_2242.jpg">Bild 2</a></small></nav>
+		</footer>
+		<script type="text/javascript" src="../scripts/recipe.js"></script>
+	</body>
+</html>
