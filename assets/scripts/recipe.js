@@ -119,7 +119,7 @@ function alterStars(inputValue) {
 	for (var i = 0; i < inputValue; i++) {
 		stars[index].innerHTML = "&starf;";
 		if (inputValue == "5") {
-			stars[index].style.color = "gold";
+			stars[index].style.color = "red";
 		} else {
 			stars[index].style.color = "darkred";
 		}
