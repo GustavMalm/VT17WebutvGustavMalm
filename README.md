@@ -1,2 +1,2 @@
 # VT17WebutvGustavMalm
-Kurs i webbutveckling 2017
+Vårterminen 2017 - Webbutveckling
